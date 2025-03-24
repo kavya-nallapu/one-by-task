@@ -23,6 +23,7 @@
              <h1 style="color: pink; font-size: 47px;" align="center">the day is friday</h1>
              <h1 style="color: pink; font-size: 47px;" align="center">the month is march</h1>
              <h1 style="color: green; font-size: 47px;" align="center">january25</h1>
+             <h1 style="color: pink; font-size: 47px;" align="center"> febraury</h1>
 
 	
 	
