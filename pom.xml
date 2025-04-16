@@ -1,15 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>in.javahome</groupId>
     <artifactId>myweb</artifactId>
     <packaging>war</packaging>
     <version>8.7.0</version>
-    <name>Java Home myweb</name>
+    <name>myweb</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <docker.image.prefix>kammana</docker.image.prefix>
+        <sonar.projectKey>myweb</sonar.projectKey>
+        <sonar.projectName>myweb</sonar.projectName>
         <sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -31,7 +34,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Spring Boot dependencies (if applicable) -->
+        <!-- Spring Boot dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -43,7 +46,7 @@
             <version>3.0.0</version>
         </dependency>
 
-        <!-- Spring Security (latest version) -->
+        <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
@@ -55,20 +58,17 @@
             <version>6.0.0</version>
         </dependency>
 
-        <!-- Add any other dependencies you use (Elasticsearch, Jackson, etc.) -->
+        <!-- Elasticsearch -->
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-elasticsearch</artifactId>
             <version>5.0.0</version>
         </dependency>
-
-        <!-- Add any other dependencies as required for your project -->
-
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin for Java 17 -->
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -79,7 +79,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire Plugin to run tests with JUnit 5 -->
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -92,7 +92,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven WAR Plugin to generate WAR file -->
+            <!-- WAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
