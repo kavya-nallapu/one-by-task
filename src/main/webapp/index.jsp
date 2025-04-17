@@ -45,8 +45,9 @@
                                       <h1 style="color: Brown; font-size: 47px;" align="center">CHAT-GPT</h1>
                                       <h1 style="color: blue; font-size: 47px;" align="center">DOLL-FISH</h1>
                                  <h1 style="color: red; font-size: 47px;" align="center">17/04/25</h1>
+                                      <h1 style="color: blue; font-size: 47px;" align="center">thursday</h1>
 
-
+                              
 
 	
 </body>
