@@ -5,14 +5,14 @@
     <groupId>in.javahome</groupId>
     <artifactId>myweb</artifactId>
     <packaging>war</packaging>
-    <version>8.7.5</version>
+    <version>8.7.6</version>
     <name>myweb</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <docker.image.prefix>kammana</docker.image.prefix>
-        <sonar.projectKey>myproject8.7.5</sonar.projectKey>
-        <sonar.projectName>myproject8.7.5</sonar.projectName>
+        <sonar.projectKey>myproject8.7.6</sonar.projectKey>
+        <sonar.projectName>myproject8.7.6</sonar.projectName>
         <sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
