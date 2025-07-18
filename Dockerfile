@@ -1,3 +1,3 @@
 FROM tomcat:10.1.23-jre17	
-COPY tomcat-users.xml /usr/local/tomcat/conf/
+COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY target/*.war /usr/local/tomcat/webapps/kavya.war
